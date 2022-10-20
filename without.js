@@ -4,20 +4,20 @@
 //It should return a new array with only those elements from source that are not present in the itemsToRemove array.
 //if item to remove is === to each index of source, remove that value
 
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length === arr2.length) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        return false;
-      }
-    }
-    return true;
-  } else {
-    return false;
-  }
-};
-
 const assertArraysEqual = (testArray, solution) => {
+  const eqArrays = (arr1, arr2) => {
+    if (arr1.length === arr2.length) {
+      for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) {
+          return false;
+        }
+      }
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   if (eqArrays(testArray, solution) === true) {
     console.log(`✅✅✅ Array Assertion Passed: ${testArray} === ${solution}`);
   } else {

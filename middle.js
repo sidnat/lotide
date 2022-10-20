@@ -1,5 +1,4 @@
 const assertArraysEqual = (testArray, solution) => {
-  
   const eqArrays = (arr1, arr2) => {
     if (arr1.length === arr2.length) {
       for (let i = 0; i < arr1.length; i++) {

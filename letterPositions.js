@@ -24,22 +24,21 @@ const letterPositions = (sentence) => {
   
   if (sentence) {
     for (let i = 0; i < sentence.length; i++) {
-
-    if (!results[sentence[i]]) {
-      results[sentence[i]] = [];
-    }
+      if (!results[sentence[i]]) {
+        results[sentence[i]] = [];
+      }
     
-    results[sentence[i]].push(i);;
+      results[sentence[i]].push(i);
     }
   }
 
   return results;
 };
 
-console.log(letterPositions("hello"))
+console.log(letterPositions("hello"));
 
 console.log(letterPositions("lighthouse in the house"));
-// { 
+// {
 //   l: [0],
 //   i: [1, 11],
 //   g: [2],
