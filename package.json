@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@sidnat/lotide",
   "version": "1.0.0",
-  "description": "lotide project for lighthouse labs",
+  "description": "lotide project for lighthouse labs, similar to lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
