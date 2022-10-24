@@ -1,14 +1,3 @@
-// const assertEqual = require("../assertEqual");
-// const head = require("../head");
-
-// assertEqual(head([5,6,7]), 5);
-// assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-// assertEqual(head([]), "Hello");
-
-// // ✅✅✅ Assertion Passed: 5 === 5
-// // ✅✅✅ Assertion Passed: Hello === Hello
-// // 🛑🛑🛑 Assertion Failed: undefined !== Hello
-
 const assert = require('chai').assert;
 const head   = require('../head');
 
@@ -20,4 +9,20 @@ describe("#head", () => {
   it("returns '5' for ['5']", () => {
     assert.strictEqual(head(['5']), '5'); 
   });
+
+  it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), 'Hello'); 
+  });
 });
+
+// // OLD TEST CODE
+// const assertEqual = require("../assertEqual");
+// const head = require("../head");
+
+// assertEqual(head([5,6,7]), 5);
+// assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+// assertEqual(head([]), "Hello");
+
+// // ✅✅✅ Assertion Passed: 5 === 5
+// // ✅✅✅ Assertion Passed: Hello === Hello
+// // 🛑🛑🛑 Assertion Failed: undefined !== Hello
